@@ -1,10 +1,10 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Justin Joy",
+    "email": "justinjoy@github.com",
     "phone": "",
     "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "summary": "Cloud + AI Specialist at Microsoft",
     "location": {
       "address": "",
       "postalCode": "",
@@ -25,8 +25,8 @@
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "cpich3g",
+        "url": "https://github.com/cpich3g"
       }
     ]
   },
