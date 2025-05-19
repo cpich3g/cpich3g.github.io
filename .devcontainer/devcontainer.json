@@ -11,5 +11,10 @@
     ],
     "workspaceFolder": "/usr/src/app",
     "remoteUser": "vscode",
-    "forwardPorts": [4000] // Add port forwarding
+    "forwardPorts": [
+      4000
+    ],
+    "tasks": {
+      "build": "npm install && npm run build:js"
+    } // Add port forwarding
 }
