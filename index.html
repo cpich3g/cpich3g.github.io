@@ -54,6 +54,7 @@
         <nav class="site-nav" aria-label="Main">
           <ul>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#lab">AI lab</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#expertise">Skills</a></li>
             <li><a href="#contact">Connect</a></li>
@@ -111,7 +112,10 @@
             <p>Teaching language models to play Pac-Man by writing strategy code, using OpenEnv and GRPO fine-tuning.</p>
             <p class="proof">2nd place, AMD × Unsloth × PyTorch OpenEnv hackathon.</p>
             <ul class="tags" aria-label="Technologies"><li>Python</li><li>OpenEnv</li><li>GRPO</li></ul>
-            <a class="project-link" href="https://github.com/cpich3g/pacman-rl" target="_blank" rel="noopener noreferrer">View Pac-Man RL on GitHub<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+            <div class="project-links">
+              <a class="project-link" href="https://github.com/cpich3g/pacman-rl" target="_blank" rel="noopener noreferrer">View Pac-Man RL on GitHub<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+              <a class="project-link" href="#lab">See the trained models <span aria-hidden="true">↓</span></a>
+            </div>
           </div>
         </article>
         <article class="project">
@@ -148,6 +152,157 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <section id="lab" class="section lab" aria-labelledby="lab-title">
+      <div class="section-title">
+        <h2 id="lab-title">Inside the model lab</h2>
+        <a href="https://huggingface.co/justinj92" target="_blank" rel="noopener noreferrer">Visit my Hugging Face profile<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="lab-intro">Open models, datasets, and experiments exploring reasoning, game-playing agents, and vision.</p>
+
+      <div class="lab-feature">
+        <figure class="lab-visual">
+          <svg viewBox="0 0 480 350" role="img" aria-labelledby="lab-visual-title">
+            <title id="lab-visual-title">Conceptual illustration of a 2048 game board</title>
+            <rect class="lab-board" x="84" y="18" width="312" height="312" rx="16"/>
+            <g class="lab-cell">
+              <rect x="100" y="34" width="64" height="64" rx="7"/><rect x="172" y="34" width="64" height="64" rx="7"/><rect x="244" y="34" width="64" height="64" rx="7"/><rect x="316" y="34" width="64" height="64" rx="7"/>
+              <rect x="100" y="106" width="64" height="64" rx="7"/><rect x="172" y="106" width="64" height="64" rx="7"/><rect x="244" y="106" width="64" height="64" rx="7"/><rect x="316" y="106" width="64" height="64" rx="7"/>
+              <rect x="100" y="178" width="64" height="64" rx="7"/><rect x="172" y="178" width="64" height="64" rx="7"/><rect x="244" y="178" width="64" height="64" rx="7"/><rect x="316" y="178" width="64" height="64" rx="7"/>
+              <rect x="100" y="250" width="64" height="64" rx="7"/><rect x="172" y="250" width="64" height="64" rx="7"/><rect x="244" y="250" width="64" height="64" rx="7"/><rect x="316" y="250" width="64" height="64" rx="7"/>
+            </g>
+            <rect class="lab-cell-accent" x="100" y="250" width="64" height="64" rx="7"/>
+            <g class="lab-cell-text" text-anchor="middle" dominant-baseline="middle">
+              <text x="132" y="66">2</text><text x="204" y="66">4</text>
+              <text x="132" y="138">4</text><text x="204" y="138">8</text><text x="276" y="138">2</text>
+              <text x="132" y="210">16</text><text x="204" y="210">8</text><text x="276" y="210">4</text><text x="348" y="210">2</text>
+              <text x="204" y="282">16</text><text x="276" y="282">8</text><text x="348" y="282">4</text>
+            </g>
+            <text class="lab-cell-text lab-cell-text-accent" x="132" y="282" text-anchor="middle" dominant-baseline="middle">32</text>
+          </svg>
+          <figcaption><span>Illustration · sample move</span><code>&lt;move&gt;left&lt;/move&gt;</code></figcaption>
+        </figure>
+        <div class="lab-feature-copy">
+          <h3>Models that learn by playing</h3>
+          <p>GRPO-trained models explore two different games: Qwen chooses moves in 2048, while GPT-OSS and Llama generate strategy code for Pac-Man.</p>
+          <ul class="lab-feature-links">
+            <li><a href="https://huggingface.co/justinj92/Qwen2.5-3B-2048Player" target="_blank" rel="noopener noreferrer">Explore the 2048 model<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/gpt-oss-20B-pacmanplayer" target="_blank" rel="noopener noreferrer">Explore the GPT-OSS Pac-Man model<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Llama-3.1-8B-Pacman-Player" target="_blank" rel="noopener noreferrer">Explore the Llama Pac-Man model<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lab-groups">
+        <section class="lab-group" aria-labelledby="lab-models-title">
+          <h3 id="lab-models-title">Selected models</h3>
+          <p>Fine-tuning and reasoning experiments, with model cards and checkpoints.</p>
+          <ul class="lab-list">
+            <li><a href="https://huggingface.co/justinj92/MediQwen-Reasoning-4B" target="_blank" rel="noopener noreferrer">MediQwen Reasoning 4B<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><p>A Qwen 3 fine-tune for medical reasoning research.</p></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen2.5-1.5B-Thinking-v1.1" target="_blank" rel="noopener noreferrer">Qwen 2.5 Thinking<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><p>A 1.5B model trained with GRPO for mathematical reasoning.</p></li>
+            <li><a href="https://huggingface.co/justinj92/lfm-hfjobs-sft" target="_blank" rel="noopener noreferrer">LFM supervised fine-tune<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><p>An LFM2.5-1.2B supervised fine-tuning experiment.</p></li>
+            <li><a href="https://huggingface.co/collections/justinj92/medical-models" target="_blank" rel="noopener noreferrer">Medical Models collection<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><p>A collection of medical-model research on Hugging Face.</p></li>
+          </ul>
+        </section>
+        <section class="lab-group" aria-labelledby="lab-datasets-title">
+          <h3 id="lab-datasets-title">Datasets</h3>
+          <p>Public datasets for conversation and reasoning experiments.</p>
+          <ul class="lab-list">
+            <li><a href="https://huggingface.co/datasets/justinj92/OpenThoughts-GRPO" target="_blank" rel="noopener noreferrer">OpenThoughts-GRPO<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><p>Reasoning prompts and traces in a GRPO-oriented dataset.</p></li>
+            <li><a href="https://huggingface.co/datasets/justinj92/Phi4SmolDS" target="_blank" rel="noopener noreferrer">Phi4SmolDS<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><p>Chat-formatted instruction and response examples.</p></li>
+            <li><a href="https://huggingface.co/datasets/justinj92/hinglish_sharegpt_v0.1" target="_blank" rel="noopener noreferrer">Hinglish ShareGPT<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><p>Hindi, Hinglish, and English conversations and translation prompts.</p></li>
+          </ul>
+        </section>
+        <section class="lab-group" aria-labelledby="lab-spaces-title">
+          <h3 id="lab-spaces-title">Space projects</h3>
+          <p>Explorations in retrieval and vision; links open the source repositories.</p>
+          <ul class="lab-list">
+            <li><a href="https://huggingface.co/spaces/justinj92/Phi3-ORPO/tree/main" target="_blank" rel="noopener noreferrer">Phi-3 ORPO source<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><p>A document-grounded research assistant using Phi-3 and LlamaIndex.</p></li>
+            <li><a href="https://huggingface.co/spaces/justinj92/florence-2/tree/main" target="_blank" rel="noopener noreferrer">Florence 2 source<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><p>A playground for Microsoft's Florence 2 vision model.</p></li>
+            <li><a href="https://huggingface.co/spaces/justinj92/burberry-vision/tree/main" target="_blank" rel="noopener noreferrer">Burberry Vision source<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a><p>A product-image experiment using a fine-tuned Phi-3.5 Vision model.</p></li>
+          </ul>
+          <p class="lab-note">The hosted demos reported configuration or runtime errors when checked in November 2026; their source remains available.</p>
+        </section>
+      </div>
+
+      <details class="model-catalog">
+        <summary>Browse all 69 public model repositories</summary>
+        <div class="model-catalog-body">
+          <p>Snapshot from November 2026. <a href="https://huggingface.co/justinj92/models" target="_blank" rel="noopener noreferrer">See the latest models on Hugging Face<span class="visually-hidden"> (opens in a new tab)</span> <span aria-hidden="true">↗</span></a></p>
+          <ul class="model-directory" aria-label="Public model repositories">
+            <li><a href="https://huggingface.co/justinj92/lfm-hfjobs-sft" target="_blank" rel="noopener noreferrer">lfm-hfjobs-sft<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/MediQwen-Reasoning-4B" target="_blank" rel="noopener noreferrer">MediQwen-Reasoning-4B<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/MediQwen-4B" target="_blank" rel="noopener noreferrer">MediQwen-4B<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/MediQwen-Reasoning-14B" target="_blank" rel="noopener noreferrer">MediQwen-Reasoning-14B<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Llama-3.1-8B-Pacman-Player" target="_blank" rel="noopener noreferrer">Llama-3.1-8B-Pacman-Player<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/gpt-oss-20B-pacmanplayer" target="_blank" rel="noopener noreferrer">gpt-oss-20B-pacmanplayer<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/MedGPT-OSS-20B-Q5_K_M-GGUF" target="_blank" rel="noopener noreferrer">MedGPT-OSS-20B-Q5_K_M-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/MedGPT-OSS-20B-Q8_0-GGUF" target="_blank" rel="noopener noreferrer">MedGPT-OSS-20B-Q8_0-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/MedGPT-OSS-20B" target="_blank" rel="noopener noreferrer">MedGPT-OSS-20B<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/gpt-nemo-120b-lora" target="_blank" rel="noopener noreferrer">gpt-nemo-120b-lora<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/gpt-oss-nemo-20b" target="_blank" rel="noopener noreferrer">gpt-oss-nemo-20b<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/gpt-nemo-20b-lora" target="_blank" rel="noopener noreferrer">gpt-nemo-20b-lora<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Llama-3.1-8B-R1-Distill-ckpt3-GGUF" target="_blank" rel="noopener noreferrer">Llama-3.1-8B-R1-Distill-ckpt3-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Llama-3.1-8B-R1-Distill" target="_blank" rel="noopener noreferrer">Llama-3.1-8B-R1-Distill<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Llama-3.1-8B-R1-Distill-ckpt2-GGUF" target="_blank" rel="noopener noreferrer">Llama-3.1-8B-R1-Distill-ckpt2-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Llama-3.1-8B-R1-Distill-ckpt1-GGUF" target="_blank" rel="noopener noreferrer">Llama-3.1-8B-R1-Distill-ckpt1-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Llama-3.1-8B-Thinking" target="_blank" rel="noopener noreferrer">Llama-3.1-8B-Thinking<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-0.6B-R1-Thinking" target="_blank" rel="noopener noreferrer">Delphermes-0.6B-R1-Thinking<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-1.7B-Thinking" target="_blank" rel="noopener noreferrer">Delphermes-1.7B-Thinking<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-0.6B-Thinking" target="_blank" rel="noopener noreferrer">Delphermes-0.6B-Thinking<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-0.6B-R1" target="_blank" rel="noopener noreferrer">Delphermes-0.6B-R1<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen3-0.6B-Math-GRPO" target="_blank" rel="noopener noreferrer">Qwen3-0.6B-Math-GRPO<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-8B-Math-GRPO-Q8_0-GGUF" target="_blank" rel="noopener noreferrer">Delphermes-8B-Math-GRPO-Q8_0-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-8B-Math-GRPO" target="_blank" rel="noopener noreferrer">Delphermes-8B-Math-GRPO<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-8B-RL" target="_blank" rel="noopener noreferrer">Delphermes-8B-RL<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-8B-RL-epoch2-Q8_0-GGUF" target="_blank" rel="noopener noreferrer">Delphermes-8B-RL-epoch2-Q8_0-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-8B-RL-epoch2" target="_blank" rel="noopener noreferrer">Delphermes-8B-RL-epoch2<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-8B" target="_blank" rel="noopener noreferrer">Delphermes-8B<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-8B-Q8_0-GGUF" target="_blank" rel="noopener noreferrer">Delphermes-8B-Q8_0-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Delphermes-8B-cpt-epoch2-Q8_0-GGUF" target="_blank" rel="noopener noreferrer">Delphermes-8B-cpt-epoch2-Q8_0-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen3-4B-Wordle-SFT-Q8_0-GGUF" target="_blank" rel="noopener noreferrer">Qwen3-4B-Wordle-SFT-Q8_0-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen3-4B-Wordle-SFT" target="_blank" rel="noopener noreferrer">Qwen3-4B-Wordle-SFT<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen2.5-0.5B-Wordle-SFT" target="_blank" rel="noopener noreferrer">Qwen2.5-0.5B-Wordle-SFT<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen2.5-3B-2048Player" target="_blank" rel="noopener noreferrer">Qwen2.5-3B-2048Player<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen2.5-1.5B-Thinking" target="_blank" rel="noopener noreferrer">Qwen2.5-1.5B-Thinking<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Llama-3.2-3B-Instruct-Thinking" target="_blank" rel="noopener noreferrer">Llama-3.2-3B-Instruct-Thinking<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Llama-3.2-3B-Instruct-Thinking-Q5_K_M-GGUF" target="_blank" rel="noopener noreferrer">Llama-3.2-3B-Instruct-Thinking-Q5_K_M-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Llama-3.2-3B-Instruct-Thinking-Q8_0-GGUF" target="_blank" rel="noopener noreferrer">Llama-3.2-3B-Instruct-Thinking-Q8_0-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi4-thinking-Q8_0-GGUF" target="_blank" rel="noopener noreferrer">phi4-thinking-Q8_0-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi4-thinking-Q5_K_M-GGUF" target="_blank" rel="noopener noreferrer">phi4-thinking-Q5_K_M-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi4-thinking" target="_blank" rel="noopener noreferrer">phi4-thinking<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen2.5-1.5B-Thinking-v1.1" target="_blank" rel="noopener noreferrer">Qwen2.5-1.5B-Thinking-v1.1<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen2.5-1.5B-Thinking-v1.1-Q5_K_M-GGUF" target="_blank" rel="noopener noreferrer">Qwen2.5-1.5B-Thinking-v1.1-Q5_K_M-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen2.5-1.5B-Thinking-v1.1-Q8_0-GGUF" target="_blank" rel="noopener noreferrer">Qwen2.5-1.5B-Thinking-v1.1-Q8_0-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen2.5-1.5B-Thinking-Q5_K_M-GGUF" target="_blank" rel="noopener noreferrer">Qwen2.5-1.5B-Thinking-Q5_K_M-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/Qwen2.5-1.5B-Thinking-Q8_0-GGUF" target="_blank" rel="noopener noreferrer">Qwen2.5-1.5B-Thinking-Q8_0-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/llama-3.2-3b-intent-classifier" target="_blank" rel="noopener noreferrer">llama-3.2-3b-intent-classifier<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/dior-backstage" target="_blank" rel="noopener noreferrer">dior-backstage<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi-35-vision-burberry" target="_blank" rel="noopener noreferrer">phi-35-vision-burberry<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi-35-vision-burberry-gguf" target="_blank" rel="noopener noreferrer">phi-35-vision-burberry-gguf<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi3-orpo" target="_blank" rel="noopener noreferrer">phi3-orpo<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi3-orpo-Q4_K_M-GGUF" target="_blank" rel="noopener noreferrer">phi3-orpo-Q4_K_M-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi3-orpo-GGUF" target="_blank" rel="noopener noreferrer">phi3-orpo-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/dolmin-0.2-Q3_K_M-GGUF" target="_blank" rel="noopener noreferrer">dolmin-0.2-Q3_K_M-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/dolmin-0.2-Q4_K_M-GGUF" target="_blank" rel="noopener noreferrer">dolmin-0.2-Q4_K_M-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi2-hermes2" target="_blank" rel="noopener noreferrer">phi2-hermes2<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi2-bunny" target="_blank" rel="noopener noreferrer">phi2-bunny<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phixtral-2x2_8-GGUF" target="_blank" rel="noopener noreferrer">phixtral-2x2_8-GGUF<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi2-platypus" target="_blank" rel="noopener noreferrer">phi2-platypus<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/dpoplatypus-phi2" target="_blank" rel="noopener noreferrer">dpoplatypus-phi2<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/tinyllama-chat-v0.4" target="_blank" rel="noopener noreferrer">tinyllama-chat-v0.4<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi-med-v1" target="_blank" rel="noopener noreferrer">phi-med-v1<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/phi-instruct" target="_blank" rel="noopener noreferrer">phi-instruct<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/youssefjj-pymistral-7B-v0.1" target="_blank" rel="noopener noreferrer">youssefjj-pymistral-7B-v0.1<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/jj-instruct" target="_blank" rel="noopener noreferrer">jj-instruct<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/jistral-7b" target="_blank" rel="noopener noreferrer">jistral-7b<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/pycode-jjllama-7b" target="_blank" rel="noopener noreferrer">pycode-jjllama-7b<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/mistralv1-vegoLLM-finetune" target="_blank" rel="noopener noreferrer">mistralv1-vegoLLM-finetune<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+            <li><a href="https://huggingface.co/justinj92/legal-jjllama-7b" target="_blank" rel="noopener noreferrer">legal-jjllama-7b<span class="visually-hidden"> (opens in a new tab)</span></a></li>
+          </ul>
+        </div>
+      </details>
     </section>
 
     <section id="experience" class="section" aria-labelledby="experience-title">
