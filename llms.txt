@@ -1,0 +1,72 @@
+# Justin Joy
+
+> Justin Joy is a Senior Solution Engineer for AI & Apps at Microsoft, based in Dublin, Ireland. He has 9+ years of experience across AI, cloud, and data, and helps customers take AI ideas beyond the demo into systems their teams can test, trust, and run. He also builds open-source AI projects and publishes fine-tuned models on Hugging Face.
+
+This file is a plain-text summary of https://cpich3g.github.io/ for language models and AI assistants. Everything here also appears on the main page. Justin is open to roles and conversations around AI engineering, agent systems, and cloud architecture. The best way to reach him is LinkedIn.
+
+## Profile
+
+- Name: Justin Joy
+- Current role: Senior Solution Engineer, AI & Apps, Microsoft (Dublin, Ireland), since August 2025
+- Experience: 9+ years in AI, cloud, and data; 160+ AI customer engagements
+- Recognition: Microsoft Platinum Club, Top 1% globally
+- Focus: agentic AI, document intelligence, computer vision, RAG, evaluation, tracing, governance, and cloud data architecture
+- Portfolio: https://cpich3g.github.io/
+- LinkedIn: https://www.linkedin.com/in/justinjoys
+- GitHub: https://github.com/cpich3g
+- Hugging Face: https://huggingface.co/justinj92
+
+## Experience
+
+- Aug 2025 to present, Microsoft, Dublin: Senior Solution Engineer, AI & Apps. Helps customers design and build agentic AI, document intelligence, and computer vision solutions, with code, evaluation, tracing, and governance.
+- Jul 2024 to Aug 2025, Microsoft, Dublin: Azure Data, Apps & AI Specialist. Designed Azure AI solutions, including a chat-with-data RAG proof of concept for a leading investment bank. Worked on partner enablement; more than 85% of PoCs converted to opportunities.
+- Jan 2022 to Jul 2024, Microsoft, Dubai then Dublin: Azure Specialist, Data & AI. Helped enterprise customers in the UAE and Ireland adopt data and AI solutions. Exceeded quota in FY23 and FY24.
+- Jan 2020 to Jan 2022, Data Semantics, Dubai: Associate Solutions Architect. Designed BI and data platforms, led a team of four consultants, and worked on Azure and AWS data warehouse migrations.
+- Feb 2017 to Jan 2020, Data Semantics, Bangalore: BI Consultant. Delivered 10+ enterprise BI implementations and built reporting pipelines handling more than 5 million records a day.
+- Apr to Oct 2015, Red Bull Racing, Milton Keynes: Frontend Developer Intern. Built frontend features for internal tools in a Formula 1 engineering environment.
+
+## Selected projects
+
+- [Pac-Man RL](https://github.com/cpich3g/pacman-rl): Language models trained with OpenEnv and GRPO to write game-playing strategies for Pac-Man. Placed 2nd in the AMD × Unsloth × PyTorch OpenEnv hackathon. Python.
+- [Cronosaurus](https://github.com/cpich3g/cronosaurus): Open-source workspace for creating and coordinating AI agents, with scheduled tasks, MCP tools, and support for different model providers. FastAPI and React.
+- [AzureOpenAI.fm](https://github.com/cpich3g/azureopenaifm): Playground for Azure OpenAI text-to-speech. Choose a voice, generate and export audio, and copy starter code. TypeScript and Next.js.
+- [Procurement Discovery](https://github.com/cpich3g/procurement-discovery-copilot): LangGraph workflow that clarifies requirements, finds vendors, and produces a structured comparison. Python and Azure OpenAI.
+
+## Hugging Face work
+
+69 public model repositories, 3 datasets, 3 Spaces, and 1 collection (snapshot from November 2026).
+
+- [Qwen2.5-3B-2048Player](https://huggingface.co/justinj92/Qwen2.5-3B-2048Player): Qwen model trained with GRPO to choose moves in 2048.
+- [gpt-oss-20B-pacmanplayer](https://huggingface.co/justinj92/gpt-oss-20B-pacmanplayer) and [Llama-3.1-8B-Pacman-Player](https://huggingface.co/justinj92/Llama-3.1-8B-Pacman-Player): models trained with GRPO to write Pac-Man strategies.
+- [MediQwen-Reasoning-4B](https://huggingface.co/justinj92/MediQwen-Reasoning-4B): Qwen 3 fine-tune exploring medical reasoning.
+- [Qwen2.5-1.5B-Thinking-v1.1](https://huggingface.co/justinj92/Qwen2.5-1.5B-Thinking-v1.1): 1.5B model trained with GRPO on mathematical reasoning.
+- [Medical Models collection](https://huggingface.co/collections/justinj92/medical-models)
+- Datasets: [OpenThoughts-GRPO](https://huggingface.co/datasets/justinj92/OpenThoughts-GRPO), [Phi4SmolDS](https://huggingface.co/datasets/justinj92/Phi4SmolDS), [Hinglish ShareGPT](https://huggingface.co/datasets/justinj92/hinglish_sharegpt_v0.1)
+- All models: https://huggingface.co/justinj92/models
+
+## Skills
+
+- AI and agent systems: Azure AI Foundry, Azure OpenAI, agent frameworks, LangGraph, RAG, document intelligence, computer vision, evaluation, red-teaming, fine-tuning, GRPO
+- Cloud and data: Azure, GCP, AWS, Synapse, Databricks, Data Factory, SQL, PostgreSQL, Cosmos DB, Power BI, KQL
+- Engineering: Python, SQL, Java, Node.js, Docker, CI/CD, proof-of-concept delivery, partner enablement, working with stakeholders from C-suite to engineering
+
+## Recognition
+
+- Microsoft Platinum Club, Top 1% globally, for SME deal-making and 160+ customer engagements across Copilot, generative AI, and analytics
+- Outstanding Achievement, Industry 4.0 & AI Manufacturing: MLOps, IoT data unification, and AI factory agents, presented at Hannover Messe in 2024 and 2025
+- Outstanding Achievement, Public Sector: Azure adoption grew 88% year over year across public sector accounts
+- Customer Excellence, Strategic SME Win: a three-cloud transformation that closed at a 206% renewal rate
+- 2nd place, AMD × Unsloth × PyTorch OpenEnv hackathon
+
+## Credentials and education
+
+- Microsoft Certified: Azure Solutions Architect Expert
+- Microsoft Certified: Azure Data Engineer, Azure AI Engineer, and Azure Data Scientist Associate
+- Microsoft Certified: Power BI Data Analyst Associate
+- NVIDIA Agentic AI
+- PGDM, Big Data Engineering, BITS Pilani, 2019 to 2020
+- BSc (Hons) Computer Science, Coventry University, 2013 to 2016
+
+## Notes
+
+This is a personal site and is not affiliated with Microsoft.
